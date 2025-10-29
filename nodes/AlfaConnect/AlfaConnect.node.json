@@ -1,0 +1,18 @@
+{
+	"node": "n8n-nodes-alfaconnect",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Communication", "Developer Tools"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://alfaconnect.io/docs/api/authentication"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://alfaconnect.io/docs/api"
+			}
+		]
+	}
+}
