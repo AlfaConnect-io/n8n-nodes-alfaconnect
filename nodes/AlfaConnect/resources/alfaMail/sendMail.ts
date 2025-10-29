@@ -72,6 +72,7 @@ export const alfaMailSendMailDescription: INodeProperties[] = [
 		displayOptions: {
 			show: showOnlyForAlfaMailSendMail,
 		},
+/*
 		options: [
 			{
 				displayName: 'From Name',
@@ -101,5 +102,6 @@ export const alfaMailSendMailDescription: INodeProperties[] = [
 				},
 			},
 		],
+        */
 	},
 ];
