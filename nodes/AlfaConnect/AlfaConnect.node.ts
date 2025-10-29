@@ -6,7 +6,7 @@ export class AlfaConnect implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'AlfaConnect',
 		name: 'alfaConnect',
-		icon: { light: 'file:../../icons/github.svg', dark: 'file:../../icons/github.dark.svg' },
+		icon: { light: 'file:../../icons/alfa.svg', dark: 'file:../../icons/alfa.dark.svg' },
 		group: ['input'],
 		version: 1,
 		subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
@@ -38,7 +38,8 @@ export class AlfaConnect implements INodeType {
 				noDataExpression: true,
 				options: [
 					{
-						name: 'Nimba',
+						// eslint-disable-next-line n8n-nodes-base/node-param-resource-with-plural-option
+						name: 'NimbaSMS',
 						value: 'nimbaSms',
 						description: 'SMS services',
 					},

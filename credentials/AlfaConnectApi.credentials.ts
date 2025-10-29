@@ -11,7 +11,7 @@ export class AlfaConnectApi implements ICredentialType {
 
 	displayName = 'AlfaConnect API';
 
-	icon: Icon = { light: 'file:../icons/alfaconnect.svg', dark: 'file:../icons/alfaconnect.dark.svg' };
+	icon: Icon = { light: 'file:../icons/alfa.svg', dark: 'file:../icons/alfa.dark.svg' };
 
 	documentationUrl = 'https://alfaconnect.io/docs/api';
 
@@ -48,7 +48,7 @@ export class AlfaConnectApi implements ICredentialType {
 	test: ICredentialTestRequest = {
 		request: {
 			baseURL: 'https://api.alfaconnect.io',
-			url: '/v1/auth/test',
+			url: '/v1/providers',
 			method: 'GET',
 		},
 	};

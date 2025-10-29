@@ -1,5 +1,6 @@
 import type { INodeProperties } from 'n8n-workflow';
 import { nimbaSmsGetBalanceDescription } from './getBalance';
+import { nimbaSendSmsDescription } from './sendSms';
 
 const showOnlyForNimbaSms = {
 	resource: ['nimbaSms'],
@@ -23,7 +24,19 @@ export const nimbaSmsDescription: INodeProperties[] = [
 				routing: {
 					request: {
 						method: 'GET',
-						url: '/v1/nimba-sms/balance',
+						url: '/v1/messages/nimbasms/balance',
+					},
+				},
+			},
+			{
+				name: 'Send SMS',
+				value: 'sendSms',
+				action: 'Send an SMS',
+				description: 'Send an SMS message',
+				routing: {
+					request: {
+						method: 'POST',
+						url: '/v1/messages/nimbasms/messages',
 					},
 				},
 			},
@@ -31,4 +44,5 @@ export const nimbaSmsDescription: INodeProperties[] = [
 		default: 'getBalance',
 	},
 	...nimbaSmsGetBalanceDescription,
+	...nimbaSendSmsDescription,
 ];

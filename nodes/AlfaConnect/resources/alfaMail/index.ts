@@ -23,7 +23,7 @@ export const alfaMailDescription: INodeProperties[] = [
 				routing: {
 					request: {
 						method: 'POST',
-						url: '/v1/alfa-mail/send',
+						url: '/v1/messages/alfamail/send',
 					},
 				},
 			},
